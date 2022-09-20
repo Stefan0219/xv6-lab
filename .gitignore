@@ -25,3 +25,6 @@ barrier
 /lab-*.json
 .DS_Store
 .vscode/settings.json
+compile_commands.json
+.vscode/launch.json
+.vscode/tasks.json
