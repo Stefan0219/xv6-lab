@@ -192,6 +192,7 @@ UPROGS=\
 	$U/_pingpong\
 	$U/_test\
 	$U/_primes\
+	$U/_Primes\
 
 
 
