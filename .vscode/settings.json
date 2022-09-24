@@ -61,6 +61,7 @@
         "streambuf": "c",
         "thread": "c",
         "cinttypes": "c",
-        "typeinfo": "c"
+        "typeinfo": "c",
+        "fs.h": "c"
     }
 }

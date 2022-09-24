@@ -9,16 +9,16 @@ fmtname(char *path)
   static char buf[DIRSIZ+1];
   char *p;
 
-  // Find first character after last slash.
+  // Find first character after last slash. from the last postion to the front postion
   for(p=path+strlen(path); p >= path && *p != '/'; p--)
     ;
-  p++;
+  p++; //remove /
 
   // Return blank-padded name.
   if(strlen(p) >= DIRSIZ)
     return p;
-  memmove(buf, p, strlen(p));
-  memset(buf+strlen(p), ' ', DIRSIZ-strlen(p));
+  memmove(buf, p, strlen(p)); //copy p into buf
+  memset(buf+strlen(p), ' ', DIRSIZ-strlen(p)); // fill the rest of the buf with ' ' 
   return buf;
 }
 

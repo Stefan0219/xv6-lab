@@ -192,8 +192,7 @@ UPROGS=\
 	$U/_pingpong\
 	$U/_test\
 	$U/_primes\
-	$U/_Primes\
-
+	$U/_find\
 
 
 ifeq ($(LAB),$(filter $(LAB), lock))
