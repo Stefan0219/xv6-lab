@@ -17,7 +17,7 @@ fmtname(char *path)
   // Return blank-padded name.
   if(strlen(p) >= DIRSIZ)
     return p;
-  memmove(buf, p, strlen(p)); //copy p into buf
+  memmove(buf, p, strlen(p)); 
   memset(buf+strlen(p), ' ', DIRSIZ-strlen(p)); // fill the rest of the buf with ' ' 
   return buf;
 }
@@ -54,12 +54,14 @@ ls(char *path)
     }
     strcpy(buf, path);
     p = buf+strlen(buf);
-    *p++ = '/';
+    *p++ = '/'; // add a '/' after path
+    //read dir's metadata into de
     while(read(fd, &de, sizeof(de)) == sizeof(de)){
-      if(de.inum == 0)
+      if(de.inum == 0){
         continue;
+      }
       memmove(p, de.name, DIRSIZ);
-      p[DIRSIZ] = 0;
+      p[DIRSIZ] = 0; // end of string
       if(stat(buf, &st) < 0){
         printf("ls: cannot stat %s\n", buf);
         continue;

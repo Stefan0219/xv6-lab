@@ -105,7 +105,7 @@ atoi(const char *s)
     n = n*10 + *s++ - '0';
   return n;
 }
-
+//move vsrc's n bytes into vdst 
 void*
 memmove(void *vdst, const void *vsrc, int n)
 {

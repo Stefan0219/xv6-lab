@@ -54,7 +54,7 @@ struct dinode {
 #define DIRSIZ 14
 
 struct dirent {
-  ushort inum;
-  char name[DIRSIZ];
+  ushort inum; // points to an inode equals to zero means it is empty.
+  char name[DIRSIZ]; //dir name
 };
 
