@@ -193,6 +193,7 @@ UPROGS=\
 	$U/_test\
 	$U/_primes\
 	$U/_find\
+	$U/_xargs\
 
 
 ifeq ($(LAB),$(filter $(LAB), lock))
@@ -284,7 +285,7 @@ QEMUGDB = $(shell if $(QEMU) -help | grep -q '^-gdb'; \
 	then echo "-gdb tcp::$(GDBPORT)"; \
 	else echo "-s -p $(GDBPORT)"; fi)
 ifndef CPUS
-CPUS := 3
+CPUS := 1 # original is 3 //TODO
 endif
 ifeq ($(LAB),fs)
 CPUS := 1

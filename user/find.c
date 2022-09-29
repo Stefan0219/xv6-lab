@@ -82,7 +82,6 @@ void helper(char *path, char *_find)
 			default:
 				break;
 			}
-			//printf("%s\n", ptr);
 		}
 		break;
 	case T_DEVICE:
