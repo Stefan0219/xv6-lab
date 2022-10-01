@@ -122,6 +122,30 @@
   {
     "arguments": [
       "/usr/bin/riscv64-linux-gnu-gcc",
+      "-c",
+      "-o",
+      "kernel/swtch.o",
+      "kernel/swtch.S"
+    ],
+    "directory": "/home/stefan/6.1810/xv6-labs-2022",
+    "file": "/home/stefan/6.1810/xv6-labs-2022/kernel/swtch.S",
+    "output": "/home/stefan/6.1810/xv6-labs-2022/kernel/swtch.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/riscv64-linux-gnu-gcc",
+      "-c",
+      "-o",
+      "kernel/trampoline.o",
+      "kernel/trampoline.S"
+    ],
+    "directory": "/home/stefan/6.1810/xv6-labs-2022",
+    "file": "/home/stefan/6.1810/xv6-labs-2022/kernel/trampoline.S",
+    "output": "/home/stefan/6.1810/xv6-labs-2022/kernel/trampoline.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/riscv64-linux-gnu-gcc",
       "-Wall",
       "-Werror",
       "-O",
@@ -145,30 +169,6 @@
     "directory": "/home/stefan/6.1810/xv6-labs-2022",
     "file": "/home/stefan/6.1810/xv6-labs-2022/kernel/proc.c",
     "output": "/home/stefan/6.1810/xv6-labs-2022/kernel/proc.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/riscv64-linux-gnu-gcc",
-      "-c",
-      "-o",
-      "kernel/trampoline.o",
-      "kernel/trampoline.S"
-    ],
-    "directory": "/home/stefan/6.1810/xv6-labs-2022",
-    "file": "/home/stefan/6.1810/xv6-labs-2022/kernel/trampoline.S",
-    "output": "/home/stefan/6.1810/xv6-labs-2022/kernel/trampoline.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/riscv64-linux-gnu-gcc",
-      "-c",
-      "-o",
-      "kernel/swtch.o",
-      "kernel/swtch.S"
-    ],
-    "directory": "/home/stefan/6.1810/xv6-labs-2022",
-    "file": "/home/stefan/6.1810/xv6-labs-2022/kernel/swtch.S",
-    "output": "/home/stefan/6.1810/xv6-labs-2022/kernel/swtch.o"
   },
   {
     "arguments": [
