@@ -64,6 +64,12 @@
         "typeinfo": "c",
         "fs.h": "c",
         "proc.h": "c",
-        "syscall.h": "c"
+        "syscall.h": "c",
+        "param.h": "c",
+        "spinlock.h": "c",
+        "defs.h": "c",
+        "riscv.h": "c",
+        "memlayout.h": "c",
+        "sysinfo.h": "c"
     }
 }

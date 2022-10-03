@@ -134,18 +134,6 @@
   {
     "arguments": [
       "/usr/bin/riscv64-linux-gnu-gcc",
-      "-c",
-      "-o",
-      "kernel/trampoline.o",
-      "kernel/trampoline.S"
-    ],
-    "directory": "/home/stefan/6.1810/xv6-labs-2022",
-    "file": "/home/stefan/6.1810/xv6-labs-2022/kernel/trampoline.S",
-    "output": "/home/stefan/6.1810/xv6-labs-2022/kernel/trampoline.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/riscv64-linux-gnu-gcc",
       "-Wall",
       "-Werror",
       "-O",
@@ -169,6 +157,18 @@
     "directory": "/home/stefan/6.1810/xv6-labs-2022",
     "file": "/home/stefan/6.1810/xv6-labs-2022/kernel/proc.c",
     "output": "/home/stefan/6.1810/xv6-labs-2022/kernel/proc.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/riscv64-linux-gnu-gcc",
+      "-c",
+      "-o",
+      "kernel/trampoline.o",
+      "kernel/trampoline.S"
+    ],
+    "directory": "/home/stefan/6.1810/xv6-labs-2022",
+    "file": "/home/stefan/6.1810/xv6-labs-2022/kernel/trampoline.S",
+    "output": "/home/stefan/6.1810/xv6-labs-2022/kernel/trampoline.o"
   },
   {
     "arguments": [
@@ -443,6 +443,18 @@
   {
     "arguments": [
       "/usr/bin/riscv64-linux-gnu-gcc",
+      "-c",
+      "-o",
+      "kernel/kernelvec.o",
+      "kernel/kernelvec.S"
+    ],
+    "directory": "/home/stefan/6.1810/xv6-labs-2022",
+    "file": "/home/stefan/6.1810/xv6-labs-2022/kernel/kernelvec.S",
+    "output": "/home/stefan/6.1810/xv6-labs-2022/kernel/kernelvec.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/riscv64-linux-gnu-gcc",
       "-Wall",
       "-Werror",
       "-O",
@@ -466,18 +478,6 @@
     "directory": "/home/stefan/6.1810/xv6-labs-2022",
     "file": "/home/stefan/6.1810/xv6-labs-2022/kernel/sysfile.c",
     "output": "/home/stefan/6.1810/xv6-labs-2022/kernel/sysfile.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/riscv64-linux-gnu-gcc",
-      "-c",
-      "-o",
-      "kernel/kernelvec.o",
-      "kernel/kernelvec.S"
-    ],
-    "directory": "/home/stefan/6.1810/xv6-labs-2022",
-    "file": "/home/stefan/6.1810/xv6-labs-2022/kernel/kernelvec.S",
-    "output": "/home/stefan/6.1810/xv6-labs-2022/kernel/kernelvec.o"
   },
   {
     "arguments": [
@@ -1228,6 +1228,60 @@
     "directory": "/home/stefan/6.1810/xv6-labs-2022",
     "file": "/home/stefan/6.1810/xv6-labs-2022/user/zombie.c",
     "output": "/home/stefan/6.1810/xv6-labs-2022/user/zombie.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/riscv64-linux-gnu-gcc",
+      "-Wall",
+      "-Werror",
+      "-O",
+      "-fno-omit-frame-pointer",
+      "-ggdb",
+      "-gdwarf-2",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
+      "-mcmodel=medany",
+      "-ffreestanding",
+      "-fno-common",
+      "-mno-relax",
+      "-I.",
+      "-fno-stack-protector",
+      "-fno-pie",
+      "-c",
+      "-o",
+      "user/trace.o",
+      "user/trace.c"
+    ],
+    "directory": "/home/stefan/6.1810/xv6-labs-2022",
+    "file": "/home/stefan/6.1810/xv6-labs-2022/user/trace.c",
+    "output": "/home/stefan/6.1810/xv6-labs-2022/user/trace.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/riscv64-linux-gnu-gcc",
+      "-Wall",
+      "-Werror",
+      "-O",
+      "-fno-omit-frame-pointer",
+      "-ggdb",
+      "-gdwarf-2",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
+      "-mcmodel=medany",
+      "-ffreestanding",
+      "-fno-common",
+      "-mno-relax",
+      "-I.",
+      "-fno-stack-protector",
+      "-fno-pie",
+      "-c",
+      "-o",
+      "user/sysinfotest.o",
+      "user/sysinfotest.c"
+    ],
+    "directory": "/home/stefan/6.1810/xv6-labs-2022",
+    "file": "/home/stefan/6.1810/xv6-labs-2022/user/sysinfotest.c",
+    "output": "/home/stefan/6.1810/xv6-labs-2022/user/sysinfotest.o"
   },
   {
     "arguments": [

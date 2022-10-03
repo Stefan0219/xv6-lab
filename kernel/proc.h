@@ -105,4 +105,7 @@ struct proc {
   struct inode *cwd;           // Current directory
   char name[16];               // Process name (debugging)
   uint64 trace_mask;           // Mask for trace syscall
+ // struct sysinfo si;           // System infomation struct which aiding the sysinfo call  
 };
+
+uint64 free_proc();

@@ -7,13 +7,13 @@
 // The C programming Language, 2nd ed.  Section 8.7.
 
 typedef long Align;
-
-union header {
+// node of free list 
+union header { 
   struct {
-    union header *ptr;
-    uint size;
+    union header *ptr; // next node 
+    uint size; // current size
   } s;
-  Align x;
+  Align x; // since it's in a union so the mem take up is forced to be 8 bytes
 };
 
 typedef union header Header;

@@ -13,6 +13,7 @@ void freerange(void *pa_start, void *pa_end);
 
 extern char end[]; // first address after kernel.
                    // defined by kernel.ld.
+                   // which is 0x80000000
 
 struct run {
   struct run *next;
@@ -23,8 +24,9 @@ struct {
   struct run *freelist;
 } kmem;
 
+//init the physical mem.
 void
-kinit()
+kinit() 
 {
   initlock(&kmem.lock, "kmem");
   freerange(end, (void*)PHYSTOP);
@@ -79,4 +81,14 @@ kalloc(void)
   if(r)
     memset((char*)r, 5, PGSIZE); // fill with junk
   return (void*)r;
+}
+uint64 free_space(){
+	struct run *p;
+	uint64 a = 0;
+	p = kmem.freelist;
+	while(p!=0){
+		p = p->next;
+		a++;
+	}
+	return a*4*1024;
 }
